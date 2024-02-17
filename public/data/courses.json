@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "_id": "5f5e3e3e3e3e3e3e3e3e3e3e",
+      "title": "Title 1",
+      "description": "Description 1",
+      "image": "/images/teacher.png",
+      "slug": "title-1",
+      "price": 100,
+      "rating": 4.5
+    }
+  ]
+}
