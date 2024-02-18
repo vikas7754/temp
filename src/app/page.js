@@ -1,10 +1,19 @@
 "use client";
-import SearchTeacher from "@/components/search";
+
+import { useState } from "react";
+import { createPortal } from "react-dom";
+import HireTrainerModal from "../components/Hire/HireTrainerModal";
 
 export default function Home() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div>
-      <SearchTeacher />
+      {showModal &&
+        createPortal(
+          <HireTrainerModal onClose={() => setShowModal(false)} />,
+          document.body
+        )}
+      <button onClick={() => setShowModal(true)}>Open Modal</button>
     </div>
   );
 }

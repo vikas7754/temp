@@ -1,0 +1,102 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 110;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.container form {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.025);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container form input,
+.container form textarea {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  outline: none;
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+  outline: none;
+}
+
+.container form input:focus,
+.container form textarea:focus {
+  background: #fff;
+  border: 1px solid #fe4a5656;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.submit button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.submit button:hover {
+  background: #fe4a55;
+}
+
+.radioBtns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.radioBtns div input {
+  margin-right: 5px;
+  color: #000;
+}
+
+.radioBtns div label {
+  color: #000;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 0;
+  background: #fe4a55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-bottom-left-radius: 15px;
+  cursor: pointer;
+}
