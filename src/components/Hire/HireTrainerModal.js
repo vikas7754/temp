@@ -211,12 +211,12 @@ function HireTrainerModal({ onClose }) {
               onChange={(e) => setDuration(e.target.value)}
             />
           </div>
-          {duration && (
+          {duration && selectedTrainer && (
             <div>
               You will be charged Rs.{" "}
               {durationType === "hours"
-                ? author.rate * duration
-                : author.rate * duration * 24}{" "}
+                ? selectedTrainer.rate * duration
+                : selectedTrainer.rate * duration * 24}{" "}
               for {duration} {durationType}.
             </div>
           )}
